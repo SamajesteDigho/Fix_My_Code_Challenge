@@ -14,6 +14,26 @@ class square():
         """ Square initialissation procedure """
         for key, value in kwargs.items():
             setattr(self, key, value)
+    
+    @property
+    def width(self):
+        """ Return width value """
+        return self.width
+    
+    @width.setter
+    def width(self, value):
+        """ Set the width value """
+        self.width = value
+    
+    @property
+    def height(self):
+        """ Return height value """
+        return self.height
+    
+    @height.setter
+    def height(self, value):
+        """ Set the height value """
+        self.height = value
 
     def area_of_my_square(self):
         """ Area of the square """
