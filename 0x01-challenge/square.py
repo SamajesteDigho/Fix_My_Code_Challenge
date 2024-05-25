@@ -6,10 +6,8 @@ In this module, we typically manage Squares
 
 class square():
     """ Here the class for Squares """
-
     width = 0
     height = 0
-
     def __init__(self, *args, **kwargs):
         """ Square initialissation procedure """
         for key, value in kwargs.items():
@@ -18,22 +16,22 @@ class square():
     @property
     def width(self):
         """ Return width value """
-        return self.width
+        return self.__width
     
     @width.setter
     def width(self, value):
         """ Set the width value """
-        self.width = value
+        self.__width = value
     
     @property
     def height(self):
         """ Return height value """
-        return self.height
+        return self.__height
     
     @height.setter
     def height(self, value):
         """ Set the height value """
-        self.height = value
+        self.__height = value
 
     def area_of_my_square(self):
         """ Area of the square """
