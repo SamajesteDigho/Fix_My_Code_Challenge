@@ -8,26 +8,27 @@ class square():
     """ Here the class for Squares """
     width = 0
     height = 0
+
     def __init__(self, *args, **kwargs):
         """ Square initialissation procedure """
         for key, value in kwargs.items():
             setattr(self, key, value)
-    
+
     @property
     def width(self):
         """ Return width value """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """ Set the width value """
         self.__width = value
-    
+
     @property
     def height(self):
         """ Return height value """
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """ Set the height value """
